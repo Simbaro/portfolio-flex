@@ -1,0 +1,72 @@
+header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color:  #eff0e5;
+  text-align: center;
+  background-color: #332C23;
+  margin: 0px;
+}
+
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-bottom: 10px;
+  font-size: 32px;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-about {
+  color: #36453B;
+  background-color: #C2C1A5;
+}
+
+.bg-projects {
+  text-align: center;
+  background-color: #596869;
+}
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+footer {
+  margin-top: 0px;
+  padding: 3px;
+  background-color: #C2C1A5;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .group {
+    flex-direction: row;
+  }
+}
