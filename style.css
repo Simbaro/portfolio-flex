@@ -1,3 +1,5 @@
+/* This is where all the header changes were made */
+
 header {
   background-color: #332C23;
   color:  #eff0e5;
@@ -33,6 +35,7 @@ header nav ul li a:hover {
   }
 
   .logo {
+    /* making the logo look better on a desktop with */
     padding: 20px;
     font-size: 42px;
   }
@@ -48,6 +51,7 @@ header nav ul li a:hover {
 }
 }
 
+/* These are the main h values and paragraph changes made to each page */
 h2 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border-bottom: 10px;
@@ -66,6 +70,7 @@ p {
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
   margin: 0px;
+  /* making sure the logo will look nice inside the background of the header */
   font-size: 52px;
   padding-top: 20px;
 }
@@ -108,7 +113,13 @@ footer {
 .links {
   text-align: center;
 }
+/* code to change the colors of the links for my links */
+section a:link { color: blue; }
+section a:visited { color: rgb(131, 182, 131); }
+section a:hover { color: #403933; }
+a:active { color: #403933; }
 
+/* editing the size of the site for desktop */
 @media all and (min-width: 700px) {
   .wrapper {
     width: 80%;
@@ -120,13 +131,12 @@ footer {
   }
 }
 
+/* all the changes made to the forms to make them look neater on a desktop view*/
 form {
   padding-right: 6px;
-  /* Fixed small sizing issue on the right */
 }
 
-form input, 
-form textarea {
+form input, form textarea {
   width: 100%;
   margin-bottom: 20px;
 }
