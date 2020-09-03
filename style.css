@@ -1,9 +1,51 @@
-header h1 {
-  font-family: 'Times New Roman', Times, serif;
-  color:  #eff0e5;
-  text-align: center;
+header {
   background-color: #332C23;
-  margin: 0px;
+  color:  #eff0e5;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-bottom: 0;
+}
+
+header nav ul li a {
+  font-family: Montserrat;
+  color: #eff0e5;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: lightgray;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding: 20px;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul {
+  display: flex;
+  list-style: none;
+  padding-top: 10px;
+}
 }
 
 h2 {
@@ -20,9 +62,12 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-.bg-about {
-  color: #36453B;
-  background-color: #C2C1A5;
+.logo {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 0px;
+  font-size: 52px;
+  padding-top: 20px;
 }
 
 .bg-projects {
@@ -56,11 +101,15 @@ footer {
   margin: 10px;
 }
 
-img {
+.img img {
   width: 100%;
 }
 
-@media all and (min-width: 800px) {
+.links {
+  text-align: center;
+}
+
+@media all and (min-width: 700px) {
   .wrapper {
     width: 80%;
     margin: auto;
@@ -69,4 +118,19 @@ img {
   .group {
     flex-direction: row;
   }
+}
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
