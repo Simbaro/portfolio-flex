@@ -76,8 +76,7 @@ p {
 }
 
 .bg-projects {
-  text-align: center;
-  background-color: #596869;
+  background-color: #e6e6e6;
 }
 
 .wrapper {
@@ -94,6 +93,13 @@ footer {
 .group {
   display: flex;
   flex-direction: column;
+}
+
+.project-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style-position: inside;
 }
 
 .item {
@@ -128,6 +134,10 @@ a:active { color: #403933; }
   
   .group {
     flex-direction: row;
+  }
+
+  .project-group {
+    text-align: inherit;
   }
 }
 
